@@ -1,6 +1,11 @@
 # AWS SAA-C03 Exam Prep
 
-**[Open Quiz & Notes →](https://vikassharma96.github.io/aws-saa-c03-quiz/)**
+### Other Questions
+
+**[Other Questions →](https://vikassharma96.github.io/aws-saa-c03-quiz/)**
+
+### All New Question
+**[All New Question →](https://tokunwarsingh.github.io/myquiz/static-aws-saa-c03-quiz/all-questions-quiz.html)**
 
 ### What's inside
 
