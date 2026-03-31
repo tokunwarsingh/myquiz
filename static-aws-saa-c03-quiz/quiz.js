@@ -16,33 +16,7 @@ function loadQuestions() {
       renderPage();
     })
     .catch(error => {
-      console.error('Error loading questions:', error);
-      // Fallback: Use hardcoded questions if file cannot be loaded
-      questions = [
-        {
-          "question_number": 1,
-          "question_text": "What is the capital of France?",
-          "options": {
-            "A": "London",
-            "B": "Paris",
-            "C": "Berlin",
-            "D": "Madrid"
-          },
-          "correct_answer": "B"
-        },
-        {
-          "question_number": 2,
-          "question_text": "What is 2 + 2?",
-          "options": {
-            "A": "3",
-            "B": "4",
-            "C": "5",
-            "D": "6"
-          },
-          "correct_answer": "B"
-        }
-      ];
-      renderPage();
+      console.error('Error loading questions:', error); 
     });
 }
 
