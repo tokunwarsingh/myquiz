@@ -1,6 +1,6 @@
 let questions = [];
 let currentPage = 1;
-const questionsPerPage = 5;
+let questionsPerPage = 5;
 
 function loadQuestions() {
   // Check if questions.json exists
@@ -198,6 +198,15 @@ function resetQuiz() {
 
 document.addEventListener('DOMContentLoaded', function() {
   loadQuestions();
+
+  const pageSizeSelect = document.getElementById('pageSizeSelect');
+  if (pageSizeSelect) {
+    pageSizeSelect.addEventListener('change', function() {
+      questionsPerPage = parseInt(this.value);
+      currentPage = 1;
+      renderPage();
+    });
+  }
   
   const submitBtn = document.getElementById('submitBtn');
   if (submitBtn) {
