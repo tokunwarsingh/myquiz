@@ -2,10 +2,10 @@
 
 ### Other Questions
 
-**[Other Questions →](https://vikassharma96.github.io/aws-saa-c03-quiz/)**
+**[All New Question →](https://vikassharma96.github.io/aws-saa-c03-quiz/)**
 
 ### All New Question
-**[All New Question →](https://tokunwarsingh.github.io/myquiz/static-aws-saa-c03-quiz/all-questions-quiz.html)**
+**[Other Questions  →](https://tokunwarsingh.github.io/myquiz/static-aws-saa-c03-quiz/othequestions.html)**
 
 ### What's inside
 

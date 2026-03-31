@@ -213,18 +213,38 @@ document.addEventListener('DOMContentLoaded', function() {
     submitBtn.addEventListener('click', submitQuiz);
   }
   
-  const resetBtn = document.getElementById('resetBtn');
+const resetBtn = document.getElementById('resetBtn');
   if (resetBtn) {
     resetBtn.addEventListener('click', resetQuiz);
   }
-  
+
+  const prevBtnTop = document.getElementById('prevBtnTop');
+  if (prevBtnTop) {
+    prevBtnTop.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderPage();
+      }
+    });
+  }
+
+  const nextBtnTop = document.getElementById('nextBtnTop');
+  if (nextBtnTop) {
+    nextBtnTop.addEventListener('click', () => {
+      if (currentPage < getTotalPages()) {
+        currentPage++;
+        renderPage();
+      }
+    });
+  }
+
   const form = document.getElementById('quizForm');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       submitQuiz();
     });
-    
+
     form.addEventListener('change', () => {
       syncSelectedStyles(form);
     });
