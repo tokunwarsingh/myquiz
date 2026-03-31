@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS SAA-C03 Full Quiz (All Questions)</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #0f172a; color: #e2e8f0; margin: 0; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 16px; }
+    .top { position: sticky; top: 0; background: #111827; border-bottom: 1px solid #334155; padding: 12px 16px; z-index: 10; }
+    .btn { background: #f59e0b; color: #111827; border: 0; padding: 10px 14px; border-radius: 8px; font-weight: 700; cursor: pointer; margin-left: 8px; }
+    .btn.secondary { background: #334155; color: #e2e8f0; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 14px; margin: 12px 0; }
+    .q { font-weight: 700; margin-bottom: 10px; line-height: 1.45; }
+    label.opt { display: block; padding: 8px; border: 1px solid #334155; border-radius: 8px; margin: 6px 0; cursor: pointer; }
+    label.opt.selected { background: #334155; border-color: #f59e0b; }
+    #result { display: none; background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 16px; margin: 14px 0; }
+    .ok { color: #22c55e; }
+    .bad { color: #ef4444; }
+    .wrong-item { border-top: 1px dashed #475569; padding-top: 10px; margin-top: 10px; }
+    .muted { color: #94a3b8; font-size: 14px; }
+    .pagination { text-align: center; margin: 20px 0; padding: 15px; border-top: 1px solid #334155; }
+    .pagination button { margin: 0 5px; }
+    .pagination .muted { margin: 0 15px; }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="container">
+      <strong>AWS SAA-C03 Full Quiz</strong>
+      <span class="muted" id="meta"></span>
+      <button class="btn" id="submitBtn" type="button">Submit Quiz</button>
+      <button class="btn secondary" id="resetBtn" type="button">Reset</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="result"></div>
+    <form id="quizForm"></form>
+  </div>
+
+<script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "A company collects data for temperature, humidity, and atmospheric pressure in cities across multiple continents. The average volume of data that the company collects from each site daily is 500 GB. Each site has a high-speed Internet connection.\nThe company wants to aggregate the data from all these global sites as quickly as possible in a single Amazon S3 bucket. The solution must minimize operational complexity.\nWhich solution meets these requirements?",
+    "options": {
+      "A": "Turn on S3 Transfer Acceleration on the destination S3 bucket. Use multipart uploads to directly upload site data to the destination S3 bucket.",
+      "B": "Upload the data from each site to an S3 bucket in the closest Region. Use S3 Cross-Region Replication to copy objects to the destination S3 bucket. Then remove the data from the origin S3 bucket.",
+      "C": "Schedule AWS Snowball Edge Storage Optimized device jobs daily to transfer data from each site to the closest Region. Use S3 Cross-Region Replication to copy objects to the destination S3 bucket.",
+      "D": "Upload the data from each site to an Amazon EC2 instance in the closest Region. Store the data in an Amazon Elastic Block Store (Amazon EBS) volume. At regular intervals, take an EBS snapshot and copy it to the Region that contains the destination S3 bucket. Restore the EBS volume in that Region."
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 2,
+    "question_text": "A company is running a web application on Amazon EC2 instances behind an Application Load Balancer. The application needs to maintain session state for users. Which service should the company use to store session data that is accessible from all EC2 instances?",
+    "options": {
+      "A": "Amazon S3",
+      "B": "Amazon ElastiCache",
+      "C": "Amazon RDS",
+      "D": "Amazon DynamoDB"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 3,
+    "question_text": "A company needs to process large amounts of data in real-time and store the results for analytics. The solution must be highly available and scalable. Which AWS service should the company use?",
+    "options": {
+      "A": "Amazon Kinesis Data Streams",
+      "B": "Amazon SQS",
+      "C": "Amazon SNS",
+      "D": "Amazon MQ"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 4,
+    "question_text": "A company wants to migrate its on-premises database to AWS with minimal downtime. The database is approximately 5 TB in size and requires ongoing replication during the migration. Which AWS service should the company use?",
+    "options": {
+      "A": "AWS Database Migration Service (DMS)",
+      "B": "Amazon RDS",
+      "C": "Amazon Aurora",
+      "D": "AWS Snowball"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 5,
+    "question_text": "A company needs to store and analyze large volumes of log data for security and compliance purposes. The solution must be cost-effective and support SQL queries. Which AWS service should the company use?",
+    "options": {
+      "A": "Amazon S3",
+      "B": "Amazon Redshift",
+      "C": "Amazon Elasticsearch Service",
+      "D": "Amazon Athena"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 6,
+    "question_text": "A company is deploying a microservices architecture and needs a service discovery mechanism. Which AWS service should the company use?",
+    "options": {
+      "A": "Amazon Route 53",
+      "B": "AWS Cloud Map",
+      "C": "Amazon API Gateway",
+      "D": "AWS App Mesh"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 7,
+    "question_text": "A company needs to implement a message queue system that supports multiple consumers and guarantees message delivery. Which AWS service should the company use?",
+    "options": {
+      "A": "Amazon SQS",
+      "B": "Amazon SNS",
+      "C": "Amazon MQ",
+      "D": "Amazon Kinesis"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 8,
+    "question_text": "A company wants to implement a content delivery network (CDN) to improve the performance of its global web application. Which AWS service should the company use?",
+    "options": {
+      "A": "Amazon CloudFront",
+      "B": "Amazon Route 53",
+      "C": "AWS Global Accelerator",
+      "D": "Amazon S3 Transfer Acceleration"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 9,
+    "question_text": "A company needs to monitor its AWS resources and applications, collecting metrics and logs for analysis. Which AWS service should the company use?",
+    "options": {
+      "A": "Amazon CloudWatch",
+      "B": "AWS CloudTrail",
+      "C": "AWS Config",
+      "D": "Amazon Inspector"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 10,
+    "question_text": "A company wants to implement a serverless architecture for its web application. Which AWS service should the company use to host the application?",
+    "options": {
+      "A": "AWS Lambda",
+      "B": "Amazon EC2",
+      "C": "AWS Fargate",
+      "D": "Amazon S3"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 11,
+    "question_text": "A company needs to implement a highly available and scalable database solution that supports both relational and non-relational data. Which AWS service should the company use?",
+    "options": {
+      "A": "Amazon Aurora",
+      "B": "Amazon DynamoDB",
+      "C": "Amazon RDS",
+      "D": "Amazon DocumentDB"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 12,
+    "question_text": "A company wants to implement a machine learning model for predictive analytics. Which AWS service should the company use?",
+    "options": {
+      "A": "Amazon SageMaker",
+      "B": "Amazon Rekognition",
+      "C": "Amazon Comprehend",
+      "D": "Amazon Lex"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 13,
+    "question_text": "A company needs to implement a secure file transfer protocol (SFTP) service for its customers. Which AWS service should the company use?",
+    "options": {
+      "A": "AWS Transfer Family",
+      "B": "Amazon S3",
+      "C": "AWS Storage Gateway",
+      "D": "Amazon EFS"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 14,
+    "question_text": "A company wants to implement a chatbot for its customer service application. Which AWS service should the company use?",
+    "options": {
+      "A": "Amazon Lex",
+      "B": "Amazon Polly",
+      "C": "Amazon Transcribe",
+      "D": "Amazon Comprehend"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 15,
+    "question_text": "A company needs to implement a data warehouse solution for its business intelligence applications. Which AWS service should the company use?",
+    "options": {
+      "A": "Amazon Redshift",
+      "B": "Amazon RDS",
+      "C": "Amazon DynamoDB",
+      "D": "Amazon Aurora"
+    },
+    "correct_answer": "A"
+  }
+]
