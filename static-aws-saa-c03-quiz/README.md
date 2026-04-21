@@ -7,6 +7,10 @@
 ### All New Question
 **[Other Questions  →](https://tokunwarsingh.github.io/myquiz/static-aws-saa-c03-quiz/othequestions.html)**
 
+
+### New Question
+**[Other Questions  →](https://tokunwarsingh.github.io/myquiz/static-aws-saa-c03-quiz/)**
+
 ### What's inside
 
 - **55 MCQ questions** — scenario-based, with answer explanations
