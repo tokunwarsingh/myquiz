@@ -161,11 +161,41 @@ function submitQuiz() {
     else wrong.push({ idx, q, user, expected });
   });
   
-  const pct = ((correct / currentQuestions.length) * 100).toFixed(2);
+const pct = ((correct / currentQuestions.length) * 100).toFixed(2);
   const result = document.getElementById('result');
   result.style.display = 'block';
   result.innerHTML = `<h2>Result</h2><p><strong>Score:</strong> ${correct}/${currentQuestions.length} (${pct}%)</p>`;
-  
+
+  // Highlight correct and incorrect answers in the quiz
+  currentQuestions.forEach((q, idx) => {
+    const user = getAnswer(idx, isMulti(q.correct_answer));
+    const expected = (q.correct_answer || '').split('').sort().join('');
+    
+    const card = document.getElementById(`q-${idx}`);
+    if (user === expected) {
+      // Correct answer - highlight with green background
+      card.style.backgroundColor = '#22c55e';
+      card.style.borderColor = '#22c55e';
+    } else {
+      // Incorrect answer - highlight with red background
+      card.style.backgroundColor = '#ef4444';
+      card.style.borderColor = '#ef4444';
+      
+      // Also highlight the correct options
+      const expectedOptions = expected.split('');
+      const optionKeys = Object.keys(q.options).sort();
+      optionKeys.forEach((k) => {
+        if (expectedOptions.includes(k)) {
+          const label = card.querySelector(`label[for="q${idx}_${k}"]`);
+          if (label) {
+            label.style.backgroundColor = '#22c55e';
+            label.style.borderColor = '#22c55e';
+          }
+        }
+      });
+    }
+  });
+
   if (wrong.length) {
     const details = document.createElement('div');
     details.innerHTML = '<h3>Incorrect / Unanswered</h3>';
@@ -180,7 +210,7 @@ function submitQuiz() {
     });
     result.appendChild(details);
   }
-  
+
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
