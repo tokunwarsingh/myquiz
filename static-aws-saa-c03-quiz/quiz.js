@@ -12,7 +12,7 @@ function loadQuestions() {
       return response.json();
     })
     .then(data => {
-      questions = data;
+questions = data.sort((a, b) => a.question_number - b.question_number);
       renderPage();
     })
     .catch(error => {
