@@ -12,11 +12,11 @@ function loadQuestions() {
       return response.json();
     })
     .then(data => {
-questions = data.sort((a, b) => a.question_number - b.question_number);
+questions = data.sort((a, b) => Number(a.question_number) - Number(b.question_number));
       renderPage();
     })
     .catch(error => {
-      console.error('Error loading questions:', error); 
+      console.error('Error loading questions:', error);
     });
 }
 
